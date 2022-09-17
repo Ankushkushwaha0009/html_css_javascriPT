@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: 1px solid aqua;
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        input{
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <label for="num1" style="font-style: italic;"> Enter the Number  :</label><br>
+    <input type="text" id="x" placeholder = "Enter  " autofocus /><br><br>
+    
+    <label for="num2" style="font-style: italic;">Enter the Number  :</label><br>
+    <input type="text" id="x1" placeholder = "Enter  "  /><br><br>
+
+    <label for="showres" > Click Here for the result  :</label><br>
+    <button type="button" onclick=" add() " style="font-style: italic;" > Get Add </button><br><br>
+
+    <div id="res">
+        Final answer is :
+    </div>
+    
+    <script>
+        function add(){
+              let f1 =  parseInt(document.getElementById("x").value);
+              let f2 =  parseInt(document.getElementById("x1").value);
+              //console.log(typeof(f1))
+              //console.log(f1+f2)
+              document.getElementById("res").innerHTML = `Addition of  ${f1}  and ${f2}  is: ${f1+f2}`;
+        }
+    </script>
+    
+</body>
+</html>
